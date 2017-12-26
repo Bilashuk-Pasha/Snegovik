@@ -1,0 +1,19 @@
+.section1 {
+	display: flex;
+
+	@media @mobile768-320 {
+		justify-content: column;
+		flex-wrap: wrap;
+	}
+
+	&-item {
+		margin: @margin_flex;
+		background:@fon-base;
+		height:120px;
+		width: 100%;
+
+		@media @mobile768-320 {
+			height:200px;
+		}
+	}
+}

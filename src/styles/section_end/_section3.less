@@ -1,0 +1,42 @@
+.section3 {
+	display: flex;
+	margin-bottom: @margin_flex;
+
+	@media @mobile768-320 {
+		flex-direction: column;
+	}
+}
+.element {
+	border:1px solid @border;
+	margin: 0 @margin_flex;
+
+	&-ul {
+		margin: @margin_flex;
+		border:1px solid @border;
+
+		@media @mobile768-320 {
+			display:flex;
+			border:none;
+			margin:0;
+			align-items: stretch;
+
+		}
+
+		&-li {
+			padding: @padding_vn;
+		}
+	}
+}
+.img-snegovik2 {
+	width: 100%;
+	height: 100%;
+}
+@media @mobile768-320 {
+	.uf2 {
+		order:2;
+		border-left: 1px solid @border;
+	}
+	.element:first-child {
+		border-bottom:none;
+	}  
+}
